@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/icon.svg" type="image/x-icon" />
+    <title>Encuentro 2023 by Juan Nuñez</title>
+    <meta name="description" content="Encuentro flexi 2023 del 01 al 03 de septiembre">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="float_time"><span id="timeRemaining">para</span></div>
+      <div class="container_barner">
+        <img src="/img/barner1.png" alt="barner evento Flexi 2023" />
+        <h1>Evento flexi 2023</h1>
+      </div>
+    </header>
+    <section class="section_principal">
+      <article class="dates">
+        <h2>Agenda</h2>
+        <br>
+        <ul>
+          <li>Viernes 01 de septiembre de 2023</li>
+          <li>Sábado 02 de septiembre de 2023</li>
+          <li>Domingo 03 de septiembre de 2023</li>
+        </ul>
+        <br>
+        <label for="start">Marca en el calendario los días del evento</label>
+        <input
+          type="date"
+          name="trip-start"
+          value="2023-09-01"
+          min="2023-09-01"
+          max="2023-09-03"
+        />
+      </article>
+      <article class="place">
+        <h2>Sede</h2>
+        <p>San Miguel de Allende</p>
+        <div class="slider-wrapper">
+          <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
+          <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
+          <ul class="slides-container" id="slides-container">
+            <li class="slide"></li>
+            <li class="slide"></li>
+            <li class="slide"></li>
+            <li class="slide"></li>
+          </ul>
+        </div>
+      </article>
+      <article class="hotel">
+        <h2>Hotel</h2>
+        <p>Rosewood San Miguel</p>
+        <div class="maps">
+<iframe
+          
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14908.25539730814!2d-100.7498707878662!3d20.909750705547367!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b51b030c39001%3A0xd047b2f9edd984b!2sRosewood%20San%20Miguel%20de%20Allende!5e0!3m2!1ses-419!2suk!4v1691200433402!5m2!1ses-419!2suk"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="maps"
+        ></iframe>
+        </div>
+        
+    </section>
+    <section class="questions">
+      <h2>Preguntas frecuentes</h2>
+      <br>
+      <details>
+        <summary>¿Cuál es el costo del evento?</summary>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate beatae distinctio aperiam praesentium recusandae aliquid incidunt dicta! Nobis, facere, illum amet numquam quis incidunt porro quibusdam exercitationem ab molestias beatae.</p>
+      </details>
+
+      <details>
+        <summary>¿Hay estacionamiento disponible en la sede?</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, officia aspernatur? Tempora dolores dolorem ut at vel fugit molestias, voluptas aliquid beatae aperiam officia optio debitis nobis accusamus voluptatibus eius.</p>
+      </details>
+
+      <details>
+        <summary>¿Se permiten mascotas en el hotel?</summary>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel optio, itaque labore qui inventore quisquam accusantium fugit debitis, alias necessitatibus esse nihil ut quaerat neque doloremque consequuntur modi deserunt molestiae!</p>
+      </details>
+    </section>
+    <section class="registro">
+      <h2>Registrate al Evento</h2>
+      <form id="registro-form">
+        <label for="firstName">Nombre:</label>
+        <input type="text" id="firstName" required />
+        <label for="lastName">Apellido:</label>
+        <input type="text" id="lastName" required />
+        <label for="phone">Número de teléfono:</label>
+        <input type="tel" id="phone" required>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="email" required />
+        <button type="submit">Registrarse</button>
+      </form>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
